@@ -48,7 +48,7 @@ async def _(c, m):
     
     duration = await get_duration(file_link)
     if isinstance(duration, str):
-        await snt.edit_text("😟 Sorry! I cannot open the file.")
+        await snt.edit_text("😟 Sorry! support only direct/streamable links")
         l = await m.forward(Config.LOG_CHANNEL)
         await l.reply_text(f'stream link : {file_link}\n\n {duration}', True)
         return
