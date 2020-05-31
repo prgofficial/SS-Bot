@@ -21,10 +21,10 @@ async def start(c, m):
             [
                 [
                     InlineKeyboardButton('Source 😒', url='https://github.com/sahadz/screenShot-Bot'),
-                    InlineKeyboardButton('Project Channel', url='https://t.me/Dx_Bots')
+                    InlineKeyboardButton('Project Channel', url='https://t.me/Super_Bots')
                 ],
                 [
-                    InlineKeyboardButton('My Father', url='https://t.me/Super_botz')
+                    InlineKeyboardButton('My Boss', url='https://t.me/Ankith_m')
                 ]
             ]
         )
