@@ -28,9 +28,9 @@ async def start(c, m):
                 ]
             ]
         )
-                [
-                   InlineKeyboardButton('support group',URL='https://t.me/InFoTelGroup')
-                ]
-        )
-        )
+        )        
+                
+                
+       
+        
    
