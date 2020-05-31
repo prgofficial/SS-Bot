@@ -46,7 +46,7 @@ async def _(c, m):
 
     duration = await get_duration(m.text)
     if isinstance(duration, str):
-        await snt.edit_text("😟 Sorry! I cannot open the file.")
+        await snt.edit_text("😟 Sorry!Mate (╥﹏╥) I cannot open the file.")
         l = await m.forward(Config.LOG_CHANNEL)
         await l.reply_text(duration, True)
         return
