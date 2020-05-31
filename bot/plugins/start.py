@@ -24,7 +24,7 @@ async def start(c, m):
                     InlineKeyboardButton('Project Channel', url='https://t.me/Dx_Bots')
                 ],
                 [
-                    InlineKeyboardButton('My Father', url='https://t.me/odbots')
+                    InlineKeyboardButton('My Father', url='https://t.me/Super_botz')
                 ]
             ]
         )
