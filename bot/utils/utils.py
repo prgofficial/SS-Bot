@@ -361,7 +361,7 @@ async def sample_fn(c, m):
         
         duration = await get_duration(file_link)
         if isinstance(duration, str):
-            await edit_message_text(m, text="😟 Sorry! I cannot open the file.")
+            await edit_message_text(m, text="Oops, What's that? Couldn't Open the file😟.")
             l = await media_msg.forward(Config.LOG_CHANNEL)
             await l.reply_text(f'stream link : {file_link}\n\nSample video requested\n\n{duration}', True)
             c.CURRENT_PROCESSES[chat_id] -= 1
@@ -483,7 +483,7 @@ async def trim_fn(c, m):
         
         duration = await get_duration(file_link)
         if isinstance(duration, str):
-            await snt.edit_text("😟 Sorry! I cannot open the file.")
+            await snt.edit_text("Oops, What's that? Couldn't Open the file😟.")
             l = await media_msg.forward(Config.LOG_CHANNEL)
             await l.reply_text(f'stream link : {file_link}\n\ntrim video requested\n\n{start}:{end}', True)
             c.CURRENT_PROCESSES[chat_id] -= 1
