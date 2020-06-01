@@ -306,7 +306,7 @@ async def screenshot_fn(c, m):
         else:
             await media_msg.reply_media_group(screenshots, True)
         
-        await edit_message_text(m, text=f'Completed in {datetime.timedelta(seconds=int(time.time()-start_time))}\n\nIf Join @moviesonlydiscussion')
+        await edit_message_text(m, text=f'Completed in {datetime.timedelta(seconds=int(time.time()-start_time))}\n\nJoin @moviesonlydiscussion\n\n©️ @prgofficial')
         c.CURRENT_PROCESSES[chat_id] -= 1
         
     except:
