@@ -42,7 +42,7 @@ async def _(c, m):
     if not is_url(m.text):
         return
 
-    snt = await m.reply_text("Hi there, Please wait while I'm getting everything ready to process your request!", quote=True)
+    snt = await m.reply_text("Give me some time bruh!! 😴", quote=True)
 
     duration = await get_duration(m.text)
     if isinstance(duration, str):
@@ -57,6 +57,6 @@ async def _(c, m):
         btns.append([InlineKeyboardButton('Generate Sample Video!', 'smpl')])
     
     await snt.edit_text(
-        text=f"Hi, Choose one of the options.\n\nTotal duration: `{datetime.timedelta(seconds=duration)}` (`{duration}s`)",
+        text=f"Tell me what to do bro 🥳.\n\nTotal duration: `{datetime.timedelta(seconds=duration)}` (`{duration}s`)",
         reply_markup=InlineKeyboardMarkup(btns)
     )
