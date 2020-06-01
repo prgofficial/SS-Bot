@@ -24,7 +24,7 @@ async def start(c, m):
                     InlineKeyboardButton('Support Group', url='https://t.me/moviesonlybotupdates')
                 ],
                 [
-                    InlineKeyboardButton('Any Further Queries', url='https://t.me/prgofficial)
+                    InlineKeyboardButton('Any Further Queries', url='https://t.me/prgofficial')
                 ]
             ]
         )
