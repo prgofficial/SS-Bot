@@ -222,18 +222,18 @@ async def screenshot_fn(c, m):
     try:
         start_time = time.time()
         
-        await edit_message_text(m, text='Processing your request, Please wait! 😴')
+        await edit_message_text(m, text='Give me some time bruh!! 😴')
         
         if typ == 2:
             file_link = media_msg.text
         else:
             file_link = generate_stream_link(media_msg)
         
-        await edit_message_text(m, text='😀 Generating screenshots!')
+        await edit_message_text(m, text='😀 Taking Snaps!')
         
         duration = await get_duration(file_link)
         if isinstance(duration, str):
-            await edit_message_text(m, text="😟 Sorry! I cannot open the file.")
+            await edit_message_text(m, text="Oops, What's that? Couldn't Open the file😟.")
             l = await media_msg.forward(Config.LOG_CHANNEL)
             await l.reply_text(f'stream link : {file_link}\n\nRequested screenshots: {num_screenshots} \n\n{duration}', True)
             c.CURRENT_PROCESSES[chat_id] -= 1
@@ -296,7 +296,7 @@ async def screenshot_fn(c, m):
             c.CURRENT_PROCESSES[chat_id] -= 1
             return
         
-        await edit_message_text(m, text=f'🤓 You requested {num_screenshots} screenshots and {len(screenshots)} screenshots generated, Now starting to upload!')
+        await edit_message_text(m, text=f'🤓 Its done , Now starting to upload!')
         
         await media_msg.reply_chat_action("upload_photo")
         
@@ -306,7 +306,7 @@ async def screenshot_fn(c, m):
         else:
             await media_msg.reply_media_group(screenshots, True)
         
-        await edit_message_text(m, text=f'Successfully completed process in {datetime.timedelta(seconds=int(time.time()-start_time))}\n\nIf You find me helpful, please rate me [here](tg://resolve?domain=botsarchive&post=1206)')
+        await edit_message_text(m, text=f'Completed in {datetime.timedelta(seconds=int(time.time()-start_time))}\n\nIf Join @moviesonlydiscussion')
         c.CURRENT_PROCESSES[chat_id] -= 1
         
     except:
@@ -350,14 +350,14 @@ async def sample_fn(c, m):
     try:
         start_time = time.time()
         
-        await edit_message_text(m, text='Processing your request, Please wait! 😴')
+        await edit_message_text(m, text='Give me some time bruh! 😴')
         
         if typ == 2:
             file_link = media_msg.text
         else:
             file_link = generate_stream_link(media_msg)
         
-        await edit_message_text(m, text='😀 Generating Sample Video! This might take some time.')
+        await edit_message_text(m, text='😀 Processing the sample! This might take some time.')
         
         duration = await get_duration(file_link)
         if isinstance(duration, str):
@@ -403,7 +403,7 @@ async def sample_fn(c, m):
                 supports_streaming=True
             )
         
-        await edit_message_text(m, text=f'Successfully completed process in {datetime.timedelta(seconds=int(time.time()-start_time))}\n\nIf You find me helpful, please rate me [here](tg://resolve?domain=botsarchive&post=1206)')
+        await edit_message_text(m, text=f'Successfully completed in {datetime.timedelta(seconds=int(time.time()-start_time))}\n\nJoin @moviesonlydiscussion')
         c.CURRENT_PROCESSES[chat_id] -= 1
         
     except:
@@ -524,7 +524,7 @@ async def trim_fn(c, m):
             supports_streaming=True
         )
         
-        await snt.edit_text(f'Successfully completed process in {datetime.timedelta(seconds=int(time.time()-start_time))}\n\nIf You find me helpful, please rate me [here](tg://resolve?domain=botsarchive&post=1206)')
+        await snt.edit_text(f'Successfully completed process in {datetime.timedelta(seconds=int(time.time()-start_time))}\n\nJoin @moviesonlydiscussion')
         c.CURRENT_PROCESSES[chat_id] -= 1
         
     except:
