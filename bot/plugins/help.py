@@ -4,21 +4,16 @@ from ..screenshotbot import ScreenShotBot
 
 
 HELP_TEXT = """
-Hi {}. Welcome to Screenshot Generator Bot. You can use me to generate
+Hi {}. I'm a Screenshot Generator Bot. You can use me for,
 
     1. Screenshots.
     2. Sample Video.
     3. Trim Video.
+ 
+👺 If bot replies __😟 Sorry! I cannot open the file.__, the file might be --currupted-- or --is malformatted--.
 
-👉 I support any kind of **telegram video file** (streaming video or document video files) provided it --has proper mime-type-- and --is not corrupted--. 
-👉 I also support **Streaming URLs**. The URL should be a --streaming URL--, --non IP specific--, and --should return proper response codes--.
+__If issues persists contact @prgofficial.__"""
 
-**General FAQ.**
-
-👉 If the bot dosen't respond to telegram files you forward, first check /start and --confirm bot is alive--. Then make sure the file is a **video file** which satisfies above mentioned conditions. 
-👉 If bot replies __😟 Sorry! I cannot open the file.__, the file might be --currupted-- or --is malformatted--.
-
-__If issues persists contact my father.__"""
 
 
 @ScreenShotBot.on_message(Filters.private & Filters.command("help"))
