@@ -23,14 +23,6 @@ async def start(c, m):
                     InlineKeyboardButton('Source Code', url='https://github.com/prgofficial/SS-Bot'),
                     InlineKeyboardButton('Support Group', url='https://t.me/moviesonlybotupdates')
                 ],
-                [
-                    InlineKeyboardButton('Any Further Queries', url='https://t.me/prgofficial')
-                ]
             ]
         )
-                
-                
-                
-       
-        
-   
+    )
