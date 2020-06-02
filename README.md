@@ -13,4 +13,4 @@ An attempt to implement the screenshot generation of telegram files without down
 
 ## The Hard Way
 
-Naah!! It's Hard. Leav it 🤣.
+Naah!! It's Hard. Leav it 🤣
