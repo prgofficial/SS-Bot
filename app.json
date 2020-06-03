@@ -82,7 +82,7 @@
 
     "HOST": {
 
-      "description": "public url stream service",
+      "description": "Heroku App URL similar to https://<appname>.herokuapp.com from file to link(musical waddle).",
 
       "value": ""
 
